@@ -1,0 +1,10 @@
+,value
+answerable,10.0
+retrieval_hit_rate,1.0
+answered_rate,1.0
+correct_answer_rate,1.0
+false_refusal_rate,0.0
+out_of_scope,3.0
+correct_refusal_rate,1.0
+false_answer_rate,0.0
+rejected_rate,0.0
