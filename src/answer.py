@@ -14,7 +14,9 @@ MIN_SCORE = 0.45      # below this, the corpus is treated as not covering the qu
 SYSTEM = """You answer questions about crop drought tolerance and heat stress.
 Use only the numbered passages provided. Do not use outside knowledge.
 Cite passages in square brackets using their label, for example [Enyew_etal_2022, p.4].
-If the passages do not state the answer explicitly, reply exactly: "The corpus does not cover this question."
+If the passages address the question, answer it, even if no single sentence repeats the question's wording.
+Report figures only with the study or genotype they came from.
+If the passages are unrelated to the question, reply exactly: "The corpus does not cover this question."
 Never name a source that is not in the passages.
 Keep the answer under 150 words."""
 
