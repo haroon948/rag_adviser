@@ -1,0 +1,53 @@
+qid,split,expect,question,top_score,n_passages,retrieval_hit,outcome,correct,bad_citations,answer
+A11,test,answer,What does genotype-by-environment analysis reveal about sorghum drought tolerance?,0.83,2,True,answered,True,,"Genotype-by-environment analysis reveals that drought tolerance in sorghum is complex and influenced by various environmental factors. The study found that genotypes with high stability across different locations were more tolerant to drought. Specifically, G244 was identified as the most stable genotype across three locations, followed by G222 and G201. Genotypes G114, G302, and G240 showed high stability for chlorophyll content at the maturity stage.
+
+Based on: [Enyew_etal_2022, p.11], [Enyew_etal_2022, p.2]"
+A12,test,answer,Which climate-smart practices are recommended for sub-Saharan Africa?,0.61,4,True,answered,True,,"According to the passages, climate-smart practices recommended for sub-Saharan Africa include:
+
+1. Agroforestry (Danquah_etal_2025, p.1)
+2. Climate-smart cropping systems (Danquah_etal_2025, p.1)
+3. Drought-tolerant crops (Olarewaju_etal_2025, p.5)
+4. Climate-resilient crops such as millets, cassava, and orphan legumes (Olarewaju_etal_2025, p.3)
+5. Improved crop varieties (Cacho_etal_2020, p.3)
+6. Climate-resilient seeds suited to local conditions (Cacho_etal_2020, p.3)
+
+Based on: [Cacho_etal_2020, p.3], [Danquah_etal_2025, p.1], [Olarewaju_etal_2025, p.3], [Olarewaju_etal_2025, p.5]"
+A13,test,answer,How do climate-resilient seeds help smallholders in sub-Saharan Africa?,0.743,3,True,answered,True,,"Climate-resilient seeds help smallholders in sub-Saharan Africa by increasing productivity and incomes. According to Cacho_etal_2020, the use of improved crop varieties in sub-Saharan Africa was estimated to have increased productivity by an average of 47%. Additionally, Cacho_etal_2020 found that providing farmers with access to improved and adapted seeds is a fundamental and proactive adaptation strategy that contributes toward Sustainable Development Goals.
+
+Based on: [Cacho_etal_2020, p.1], [Cacho_etal_2020, p.3], [Mwamahonje_etal_2026, p.5]"
+A14,test,answer,How can genomic selection help breed climate-resilient maize?,0.801,2,True,answered,True,,"Genomic selection can help breed climate-resilient maize by identifying genetic variants associated with drought and heat tolerance. This can be done by analyzing the genetic makeup of maize lines and identifying markers linked to stress tolerance. The use of genomic selection can accelerate the identification and development of maize lines adapted to climate variability.
+
+Based on: [Mwamahonje_etal_2026, p.11], [Mwamahonje_etal_2026, p.8]"
+A15,test,answer,How does extreme heat affect global crop yields under climate change?,0.811,4,True,answered,True,,"Extreme heat stress can lead to a decrease in global crop yields under climate change. According to Deryng et al. (2014), extreme heat stress during the crop reproductive period can be critical for crop productivity, and projected changes in the frequency and severity of extreme climatic events are expected to negatively impact crop yields. The study found that increasing risks from extreme weather events, increased atmospheric CO2 concentration, and increased pest damage can lead to a decrease in crop yields. Specifically, a temperature increase of 3–4°C can cause crop yields to fall by 15–35% in Africa and Asia, and by 25–35% in the Middle East (Ortiz et al., 2008).
+
+Based on: [Bita_Gerats_2013, p.1], [Deryng_etal_2014, p.2], [Deryng_etal_2014, p.3]"
+A16,test,answer,How does D-mannitol drought stress affect squash germination?,0.846,2,True,answered,True,,"According to Saadaoui_etal_2023, p.1, D-mannitol drought stress reduced germination potential of squash landraces.
+
+Based on: [Saadaoui_etal_2023, p.14], [Saadaoui_etal_2023, p.1]"
+A17,test,answer,What approaches are used to mitigate combined heat and drought stress in crops?,0.744,5,True,answered,True,,"According to [Fahad_etal_2017, p.2] and [Zampieri_etal_2017, p.2], approaches to mitigate combined heat and drought stress in crops include irrigation, evaporative cooling, and altering planting seasons according to predicted precipitation patterns. Additionally, [Olarewaju_etal_2025, p.13] suggests the integration of modern irrigation systems, traditional rainwater harvesting, and ecological soil management techniques as a comprehensive approach to optimizing water use in agriculture.
+
+Based on: [Fahad_etal_2017, p.1], [Fahad_etal_2017, p.2], [Mir_etal_2012, p.3], [Olarewaju_etal_2025, p.13], [Zampieri_etal_2017, p.2]"
+A18,test,answer,How do drought and heat stress differ in their effects on yield?,0.695,6,True,answered,True,,"Drought and heat stress can have distinct effects on yield. Drought can cause a ∼55% yield loss in wheat yield (Yu C. et al., 2018), while heat stress can reduce grain yield considerably, especially around sensitive stages of crop development (T ashiro and W ardlaw1990, Ferris et al 1998, Porter and Gawith 1999,L u o2011). However, the detrimental effect of heat stress on wheat yield may worsen when coinciding with drought (Pradhan et al 2012).
+
+Based on: [Fahad_etal_2017, p.1], [Fahad_etal_2017, p.4], [Khadka_etal_2020, p.2], [Mir_etal_2012, p.2], [Zampieri_etal_2017, p.2]"
+A19,test,answer,What physiological traits does drought tolerance in wheat depend on?,0.757,4,True,answered,True,,"Drought tolerance in wheat depends on several physiological traits, including:
+
+leaf water potential, leaf and canopy temperature, transpiration rate, stomatal conductance, water use efficiency, biomass/mm of water extracted from the soil, transpiration efficiency of growth (TE), C-isotope discrimination (D13C) of leaves, and spike photosynthesis associated with reﬁxation of respira- tory CO2.
+
+These traits are mentioned in passages [Fahad_etal_2017, p.4] and [Mir_etal_2012, p.5].
+
+Based on: [Fahad_etal_2017, p.4], [Khadka_etal_2020, p.3], [Mir_etal_2012, p.5]"
+A20,test,answer,What is the effect of low rainfall on rainfed winter wheat?,0.706,3,True,answered,True,,"According to [Lopes_etal_2018, p.2], low rainfall can have an impact on rainfed winter wheat, but the exact effect is not specified.
+
+However, [Lopes_etal_2018, p.14] suggests that low rainfall can be a limiting factor for grain yield in rainfed winter wheat, but it does not provide a specific figure.
+
+[Zampieri_etal_2017, p.2] mentions that extreme high temperatures can reduce grain yield considerably, and that the detrimental effect of heat stress on wheat yield may worsen when coinciding with drought.
+
+Based on: [Lopes_etal_2018, p.14], [Lopes_etal_2018, p.2], [Zampieri_etal_2017, p.2]"
+R05,test,refuse,What is the genome size of sorghum?,0.622,2,,refused,True,,"The corpus does not cover this question.
+
+Based on: [Enyew_etal_2022, p.2], [Enyew_etal_2022, p.9]"
+R06,test,refuse,What fertiliser rate should a farmer in Ghana apply to maize this season?,0.641,3,,refused,True,,"The corpus does not cover this question.
+
+Based on: [Cacho_etal_2020, p.13], [Mwamahonje_etal_2026, p.4], [Mwamahonje_etal_2026, p.5]"
+R07,test,refuse,How much rainfall did Lagos receive last month?,0.446,0,,refused,True,,The corpus does not cover this question.

@@ -1,0 +1,54 @@
+qid,split,expect,question,top_score,n_passages,retrieval_hit,outcome,correct,bad_citations,answer
+A01,dev,answer,What is the stay-green trait?,0.535,6,True,answered,True,,"The stay-green trait is associated with delayed flag leaf senescence, which is positively correlated with PAE, CHLF, and SG. It is also linked to altered cytokinin and ethylene activities. The trait can be recorded visually by using qualitative leaf color scores.
+
+Based on: [Enyew_etal_2022, p.10], [Enyew_etal_2022, p.4], [Fahad_etal_2017, p.8], [Khadka_etal_2020, p.10], [Khadka_etal_2020, p.13], [Mir_etal_2012, p.5]"
+A02,dev,answer,How do high temperatures affect wheat grain filling?,0.693,7,True,answered,True,,"High temperatures can shorten the grain-filling period, reduce the duration of dry matter accumulation in the seeds, and finally reduce kernel weight.
+
+Based on: [Bita_Gerats_2013, p.5], [Khadka_etal_2020, p.12], [Poggi_etal_2022, p.14], [Poggi_etal_2022, p.3], [Zampieri_etal_2017, p.2]"
+A03,dev,answer,How does heat affect tomato pollen?,0.708,4,True,answered,True,,"Heat stress negatively affects tomato pollen, leading to reduced pollen viability and diminished fruit set. Heat stress causes structural abnormalities in developing microspores, tapetal degeneration, and malformations in the endoplasmic reticulum. It also induces early abortion of tapetal cells, causing pollen mother cells to rapidly progress toward meiotic prophase and ultimately undergo programmed cell death, resulting in pollen sterility. Additionally, heat stress reduces the accumulation of carbohydrates in pollen grains and ATP in the stigmatic tissue.
+
+Based on: [Bita_Gerats_2013, p.5], [Bita_Gerats_2013, p.6], [Hoshikawa_etal_2021, p.7]"
+A04,dev,answer,What is the Combined Stress Index?,0.45,1,True,answered,True,,"The Combined Stress Index is weighted with the average national production values to ease the comparison between the two time-series.
+
+Based on: [Zampieri_etal_2017, p.7]"
+A05,dev,answer,How is drought tolerance measured in cassava?,0.805,2,True,answered,True,,"Drought tolerance in cassava is measured by evaluating various physiological traits, including percentage of leaf retention, leaf scar method, height of leafless stem, length and width of fully expanded leaf lobe, carbohydrate content of leaves, stems, and petiole, stomatal conductance, and ABA content of leaves and stems. Additionally, traits measured at harvest include above-ground biomass, storage root fresh weight, number of storage roots, stem diameter, storage root dry matter, and storage root starch content.
+
+Based on: [Okogbenin_etal_2013, p.3], [Okogbenin_etal_2013, p.4]"
+A06,dev,answer,What traits are used to screen wheat for drought tolerance?,0.743,4,True,answered,True,,"The traits used to screen wheat for drought tolerance include:
+
+1. Days to 50% heading (DTH)
+2. Days to maturity (DTM)
+3. Proline content (PC)
+4. SPS (Stress-Physiological Score)
+5. SL (Stress-Loss)
+6. KPS (Kennel Performance Score)
+7. TSW (Test Weight)
+8. Grain yield per plot (GY)
+9. PH (Physiological Heat Stress)
+10. Number of kennels per plant (KPS)
+
+Based on: [Khadka_etal_2020, p.3], [Mwadzingeni_etal_2016, p.5], [Mwadzingeni_etal_2016, p.7]"
+A07,dev,answer,What role does proline play in drought tolerance?,0.67,6,True,answered,True,,"Proline plays a pivotal role in regulating osmotic pressure in stressed plants, and is a key biochemical that accumulates in significant proportions in plants exposed to dehydration. It has been associated with osmotic adjustment, membrane stabilization, and gene signaling to activate anti-oxidizing enzymes. Proline is also involved in regulating osmotic pressure in stressed plants, and its accumulation is correlated with drought tolerance.
+
+Based on: [Gudys_etal_2018, p.11], [Gudys_etal_2018, p.2], [Mwadzingeni_etal_2016, p.10], [Mwadzingeni_etal_2016, p.2], [Saadaoui_etal_2023, p.15]"
+A08,dev,answer,How does drought at the reproductive stage affect rice yield?,0.733,3,True,refused,False,,"The corpus does not cover this question.
+
+Based on: [Fahad_etal_2017, p.2], [Venkateshwarlu_etal_2022, p.4], [Venkateshwarlu_etal_2022, p.7]"
+A09,dev,answer,Which candidate genes are linked to drought response in barley?,0.804,3,True,answered,True,,"According to [Gudys_etal_2018, p.1], the candidate genes linked to drought response in barley are genes involved in cell protection under drought stress, such as proteins involved in osmotic adjustment, degradation, repair, detoxification, and structural adaptations.
+
+Additionally, [Gudys_etal_2018, p.2] mentions that the candidate genes can also be genes involved in the regulation of other genes involved in the drought response, but it does not specifically list them.
+
+[Mir_etal_2012, p.12] does not provide a specific list of candidate genes linked to drought response in barley, but it mentions that genome annotation, molecular physiological, and functional genomics studies have identified candidate genes involved in conferring drought tolerance in model and/or major crop species.
+
+Based on: [Gudys_etal_2018, p.1], [Gudys_etal_2018, p.2], [Mir_etal_2012, p.12]"
+A10,dev,answer,How is climate change affecting wheat phenology in northern Italy?,0.774,3,True,answered,True,,"According to Poggi_etal_2022, climate change is affecting wheat phenology in northern Italy, with a significant shortening of the chronological time necessary to reach the main phenological phases in the present period (2006–2020) compared to the past period (1952–1966).
+
+Based on: [Poggi_etal_2022, p.1], [Poggi_etal_2022, p.2], [Zampieri_etal_2017, p.1]"
+R01,dev,refuse,What is the price of maize in Nairobi markets today?,0.531,3,,refused,True,,"The corpus does not cover this question.
+
+Based on: [Cacho_etal_2020, p.12], [Cacho_etal_2020, p.13], [Mwamahonje_etal_2026, p.3]"
+R02,dev,refuse,What interest rate do banks charge for agricultural loans in Kenya?,0.544,2,,refused,True,,"The corpus does not cover this question.
+
+Based on: [Olarewaju_etal_2025, p.15], [Olarewaju_etal_2025, p.2]"
+R03,dev,refuse,How do I install Ubuntu on a laptop?,0.147,0,,refused,True,,The corpus does not cover this question.
+R04,dev,refuse,Who won the 2022 FIFA World Cup?,0.249,0,,refused,True,,The corpus does not cover this question.
