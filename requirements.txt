@@ -28,6 +28,7 @@ numpy==2.5.4
 ollama==0.6.3
 packaging==26.3
 pandas==3.1.1
+pyarrow==26.0.1
 pydantic==2.14.3
 pydantic_core==2.50.4
 Pygments==2.21.0
