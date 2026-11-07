@@ -1,5 +1,6 @@
 """Build a searchable index from accepted PDFs listed in manifest.csv."""
 from pathlib import Path
+import re
 
 import numpy as np
 import pandas as pd
@@ -14,7 +15,12 @@ PROCESSED = ROOT / "data" / "processed"
 EMBED_MODEL = "all-MiniLM-L6-v2"  # 384-dimensional, Apache 2.0
 CHUNK_WORDS = 200
 OVERLAP_WORDS = 40
+REF_HEADING = re.compile(r"^\s*(references|bibliography|literature cited)\s*$", re.IGNORECASE | re.MULTILINE)
 
+
+def is_citation_block(text):
+    cites = len(re.findall(r"et al\.|doi:|\(\d{4}\)|\b\d{4}\b\.", text))
+    return cites >= 4 and cites / max(len(text.split()), 1) > 0.08
 
 def load_accepted():
     m = pd.read_csv(MANIFEST, encoding="utf-8")
@@ -26,13 +32,18 @@ def load_accepted():
 
 
 def pdf_pages(path):
-    """Yield (page_number, text) for each page with extractable text."""
     reader = PdfReader(str(path))
     for i, page in enumerate(reader.pages, start=1):
         text = (page.extract_text() or "").strip()
-        if text:
-            yield i, text
-
+        if not text:
+            continue
+        m = REF_HEADING.search(text)
+        if m:
+            text = text[:m.start()].strip()
+            if text:
+                yield i, text
+            return  # everything after the reference heading is bibliography
+        yield i, text
 
 def chunk_words(text, size=CHUNK_WORDS, overlap=OVERLAP_WORDS):
     words = text.split()
@@ -49,6 +60,8 @@ def build_chunks(docs):
         path = RAW / f"{doc['doc_id']}.pdf"
         for page_no, text in pdf_pages(path):
             for piece in chunk_words(text):
+                if is_citation_block(piece):
+                    continue
                 rows.append({
                     "doc_id": doc["doc_id"],
                     "title": doc["title"],
